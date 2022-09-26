@@ -16,13 +16,11 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 ```
-git clone [this repo]
+git clone https://github.com/jaredatandi/alx-higher_level_programming/tree/main/0x03-python-data_structures 
 cd 0x03-python-data_structures 
-
 ```
-
 ### Install
-`chmod +x [file]j`
+`chmod +x [file]`
 
 ### Usage
 `./filename`
@@ -31,13 +29,13 @@ cd 0x03-python-data_structures
 
 👤 **Jared Atandi**
 
-- GitHub: [@githubhandle](https://github.com/jaredatandi)
+- GitHub: [@jaredatandi](https://github.com/jaredatandi)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/jaredatandi/alx-higher_level_programming/issues)
 
 ## Show your support
 
