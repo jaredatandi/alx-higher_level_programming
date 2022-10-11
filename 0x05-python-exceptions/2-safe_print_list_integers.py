@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 def safe_print_list_integers(my_list, x=0):
-    """TODO: Docstring for .
-    :returns: TODO
+    """description: Docstring for safe_print_list_integers 
+    :returns: number of printed elements 
     """
-    i = 0
-    try:
-        while (i < x):
+    c = 0
+    for i in range(0, x):
+        try:
             print("{:d}".format(my_list[i]), end="")
-            i += 1
-    except Exception as e:
-        pass
+            c += 1
+        except (ValueError, TypeError):
+            pass
     print()
-    return (i)
+    return (c)
