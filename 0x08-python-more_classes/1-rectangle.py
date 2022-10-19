@@ -9,7 +9,6 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """Intializes a Rectangle isinstance.
-        
         Args:
             width: the width measurement
             height: the height measurement
