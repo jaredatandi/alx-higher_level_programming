@@ -22,6 +22,7 @@ class Rectangle:
         with '#' character. """
         if self.__height == 0 or self.__width == 0:
             return ''
+        rec = ''
         for i in range(self.__height):
             for j in range(self.__width):
                 rec += '#'
