@@ -58,7 +58,7 @@ class Rectangle:
         Args:
             value: the positive int value
         """
-        if isinstance(value, int):
+        if not isinstance(value, int):
             raise TypeError("height must be an int")
         if value < 0:
             raise ValueError("height must be >= 0")
