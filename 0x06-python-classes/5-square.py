@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 class Square:
-    """
-    Defines a class square with
-    Private instance attribute size
-    Instatiation with optional size
-    An area method
+    """Represents a square.
+    Private instance attribute: size:
+        - property def size(self)
+        - property setter def size(self, value)
+    Instantiation with optional size.
+    Public instance method: def area(self).
+    Public instance method: def my_print(self).
     """
 
     def __init__(self, size=0):
@@ -31,7 +33,10 @@ class Square:
 
     def my_print(self):
         """ prints the character '#'"""
-        for i in range(0, self.__size):
-            for r in range(0, self.__size):
-                print('#')
+        if self.__size == 0:
             print()
+        else:
+            for i in range(0, self.__size):
+                for r in range(0, self.__size):
+                    print('#')
+                print()
