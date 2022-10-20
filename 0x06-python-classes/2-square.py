@@ -2,7 +2,7 @@
 class Square:
     """Represents a square class.
     Private instance attribute: size.
-    with type and error checking
+    With type and negative value checking 
     """
 
 
