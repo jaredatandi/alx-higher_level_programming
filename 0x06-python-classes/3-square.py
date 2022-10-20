@@ -7,7 +7,6 @@ class Square:
     An area method
     """
 
-
     def __init__(self, size=0):
         """Intializes the class Square"""
         if not isinstance(size, int):
