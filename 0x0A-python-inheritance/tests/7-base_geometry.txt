@@ -1,0 +1,18 @@
+=====================================
+The ``7-base_geometry`` module
+=====================================
+
+using ``BaseGeometry``
+--------------------------------------
+
+Importing the class:
+
+	>>> BGeometry = __import__('7-base_geometry').BaseGeometry
+
+Testing the class:
+
+	>>> bg = BGeometry()
+
+	>> bg.integer_validator("my_int", 12)
+
+	>>> bg.integer_validator("Width", 89)
