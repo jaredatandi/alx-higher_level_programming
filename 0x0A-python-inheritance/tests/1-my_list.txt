@@ -1,0 +1,50 @@
+============================
+``1-test_MyList`` module
+============================
+
+using ``MyList``
+----------------------
+Importing the class
+	
+	>>> tst_MyList = __import__('1-my_list').MyList
+
+Now Testing it :
+
+	>>> test_MyList = tst_MyList()
+
+	>>> test_MyList 
+	[]
+
+	>>> test_MyList.append(1)
+
+
+	>>> test_MyList.append(4)
+
+	>>> test_MyList.append(7)
+
+	>>> test_MyList.append(2)
+
+	>>> test_MyList
+	[1, 4, 7, 2]
+
+	>>> test_MyList.print_sorted()
+	[1, 2, 4, 7]
+
+	>>> test_MyList
+	[1, 4, 7, 2]
+
+	>>> test_MyList = tst_MyList([2, 5, 8, 3, 2, 5, 2])
+
+	>>> test_MyList
+	[2, 5, 8, 3, 2, 5, 2]
+
+	>>> test_MyList.print_sorted()
+	[2, 2, 2, 3, 5, 5, 8]
+
+	>>> test_MyList = tst_MyList("hello")
+
+	>>> test_MyList
+	['h', 'e', 'l', 'l', 'o']
+
+	>>> test_MyList.print_sorted()
+	['e', 'h', 'l', 'l', 'o']
