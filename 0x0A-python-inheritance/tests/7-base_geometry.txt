@@ -5,11 +5,11 @@ The ``7-base_geometry`` module
 using ``BaseGeometry``
 --------------------------------------
 
-Importing the class:
+Import the class:
 
 	>>> BGeometry = __import__('7-base_geometry').BaseGeometry
 
-Testing the class:
+Test the class:
 
 	>>> bg = BGeometry()
 
