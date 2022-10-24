@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-"""Module 5-base_geometry
-A class based on an empty class
+"""Module 7-base_geometry.
+Creates a BaseGeometry class.
 """
 
 
 class BaseGeometry:
-    """A class with a public method."""
+    """A class with a public method and a validator."""
 
     def area(self):
         """A class that raise an Exception with the message
