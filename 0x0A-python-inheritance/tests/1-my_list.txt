@@ -2,7 +2,7 @@
 ``1-test_MyList`` module
 ============================
 
-using ``MyList``
+using ``tst_MyList``
 ----------------------
 Importing the class
 	
