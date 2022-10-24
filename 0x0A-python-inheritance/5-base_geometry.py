@@ -3,6 +3,7 @@
 An empty class Base class
 """
 
+
 class BaseGeometry:
     """An empty class."""
 
