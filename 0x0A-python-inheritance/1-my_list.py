@@ -17,5 +17,3 @@ class MyList(list):
         copied_list = self[:]
         copied_list.sort()
         print("{}".format(copied_list))
-
-
