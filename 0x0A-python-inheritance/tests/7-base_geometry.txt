@@ -9,7 +9,7 @@ Import the class:
 
 	>>> BGeometry = __import__('7-base_geometry').BaseGeometry
 
-Test the class:
+Now test it:
 
 	>>> bg = BGeometry()
 
