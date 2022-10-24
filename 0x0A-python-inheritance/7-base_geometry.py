@@ -22,9 +22,6 @@ class BaseGeometry:
             - value: an int
         """
 
-        if type(name) is not str:
-            raise TypeError("{} must be a string".format(name))
-
         if type(value) is not int: 
             raise TypeError("{} must be an integer".format(name))
 
