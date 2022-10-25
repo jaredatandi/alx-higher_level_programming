@@ -10,7 +10,8 @@ def write_file(filename="", text=""):
     Args:
         filename: the name of the file
         text: the text to write
+    Return: the number of char added
     """
 
-    with open(filename, "w+") as file:
+    with open(filename, "a+") as file:
         return file.write(text)
