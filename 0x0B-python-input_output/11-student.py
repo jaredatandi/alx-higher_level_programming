@@ -42,4 +42,4 @@ class Student:
         """
 
         for elem in json:
-            self.__dict__.update({x: json[x]})
+            self.__dict__.update({elem: json[elem]})
