@@ -30,7 +30,13 @@ class BaseGeometry:
 
 
 class Rectangle(BaseGeometry):
-    """Represent a Rectangle class derived from BaseGeometry."""
+    """Represent a Rectangle class derived from BaseGeometry.
+
+    Private instance attributes
+        width
+        height
+    Inherits from BaseGeometry
+    """
 
     def __init__(self, width, height):
         """Initalize the class.
