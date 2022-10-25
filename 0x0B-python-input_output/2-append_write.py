@@ -4,7 +4,7 @@ Appends a string to a test file
 """
 
 
-def write_file(filename="", text=""):
+def append_write(filename="", text=""):
     """Appends to a text file
 
     Args:
