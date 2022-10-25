@@ -2,6 +2,9 @@
 7-base_geometry.py
 =============================
 
+using ``BaseGeometry``
+--------------------------
+
 This modules defines a base geometry class BaseGeometry.
 
 Instantiation
@@ -9,15 +12,15 @@ Instantiation
 
 ``BaseGeometry`` includes no attributes, and accordingly is initialized with no arguments.
 
-##
+::
+
+Import the class:
 
 	>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 	>>> bg = BaseGeometry()
 
-##
-
-Methods
-=======
+::
+Now test it:
 
 	>>> bg.area()
 	Traceback (most recent call last):
@@ -65,5 +68,3 @@ Methods
 	>>> bg.integer_validator("age", None)
 	Traceback (most recent call last):
 	TypeError: age must be an integer
-
-
