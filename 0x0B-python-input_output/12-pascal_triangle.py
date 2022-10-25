@@ -20,7 +20,7 @@ def pascal_triangle(n):
     lst = [[0 for x in range(i + 1)] for i in range(n)]
     lst[0] = lst[1]
 
-    for in range(1, n):
+    for i in range(1, n):
         lst[1][0] = 1
         for j in range(1, i + 1):
             if j < len(lst[i - 1]):
