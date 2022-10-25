@@ -12,5 +12,5 @@ def write_file(filename="", text=""):
         text: the text to write
     """
 
-    with open(filename, "a") as file:
+    with open(filename, "w+") as file:
         return file.write(text)
