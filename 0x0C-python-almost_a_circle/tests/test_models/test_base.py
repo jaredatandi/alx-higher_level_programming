@@ -53,5 +53,8 @@ class TestBaseClass(unittest.TestCase):
     def test_range(self):
         self.assertEqual(range(10), Base(range(10)).id)
 
+    def test_tuple(self):
+        self.assertEqual((1, 4), Base((1, 4)).id)
+
 if __name__ == '__main__':
     uniitest.main()
