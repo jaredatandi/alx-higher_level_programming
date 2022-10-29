@@ -50,5 +50,8 @@ class TestBaseClass(unittest.TestCase):
     def test_bool(self):
         self.assertEqual(False, Base(False).id)
 
+    def test_range(self):
+        self.assertEqual(range(10), Base(range(10)).id)
+
 if __name__ == '__main__':
     uniitest.main()
