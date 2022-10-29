@@ -47,5 +47,8 @@ class TestBaseClass(unittest.TestCase):
     def test_inf_id(self):
         self.assertEqual(float('inf'), Base(float('inf')).id)
 
+    def test_bool(self):
+        self.assertEqual(False, Base(False).id)
+
 if __name__ == '__main__':
     uniitest.main()
