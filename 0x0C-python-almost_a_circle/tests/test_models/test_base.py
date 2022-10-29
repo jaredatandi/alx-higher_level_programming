@@ -62,5 +62,8 @@ class TestBaseClass(unittest.TestCase):
     def test_NaN(self):
         self.assertNotEqual(float('nan'), Base(float('nan')).id)
 
+    def test_memoryview(self):
+        self.assertEqual(memoryview(b'abc'), Base(memoryview(b'abc')).id)
+
 if __name__ == '__main__':
     uniitest.main()
