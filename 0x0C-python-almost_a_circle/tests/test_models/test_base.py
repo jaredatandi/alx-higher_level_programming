@@ -78,5 +78,8 @@ class TestBaseClass(unittest.TestCase):
     def test_bytes(self):
         self.assertEqual(b'jared', Base(b'jared').id)
 
+    def test_frozenset(self):
+        self.assertEqual(frozenset({1, 2}), Base(frozenset({1, 2})).id)
+
 if __name__ == '__main__':
     uniitest.main()
