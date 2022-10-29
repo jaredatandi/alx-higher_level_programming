@@ -72,5 +72,11 @@ class TestBaseClass(unittest.TestCase):
     def test_is_no_instance(self):
         self.assertNotIsInstance(id, Base)
 
+    def test_list(self):
+        self.assertEqual([1, 2, 5], Base([1, 2, 5]).id)
+
+    def test_bytes(self):
+        self.assertEqual(b'jared', Base(b'jared').id)
+
 if __name__ == '__main__':
     uniitest.main()
