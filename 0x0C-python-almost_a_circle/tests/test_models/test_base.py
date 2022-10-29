@@ -81,5 +81,8 @@ class TestBaseClass(unittest.TestCase):
     def test_frozenset(self):
         self.assertEqual(frozenset({1, 2}), Base(frozenset({1, 2})).id)
 
+    def test_bytearray(self):
+        self.assertEqual(bytearray(b'cd'), Base(bytearray(b'cd')).id)
+
 if __name__ == '__main__':
     uniitest.main()
