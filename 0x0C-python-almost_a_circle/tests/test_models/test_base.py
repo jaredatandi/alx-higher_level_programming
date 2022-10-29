@@ -59,5 +59,8 @@ class TestBaseClass(unittest.TestCase):
     def test_complex(self):
         self.assertEqual(complex(7), Base(complex(7)).id)
 
+    def test_NaN(self):
+        self.assertNotEqual(float('nan'), Base(float('nan')).id)
+
 if __name__ == '__main__':
     uniitest.main()
