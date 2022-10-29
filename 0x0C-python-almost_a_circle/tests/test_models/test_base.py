@@ -65,5 +65,9 @@ class TestBaseClass(unittest.TestCase):
     def test_memoryview(self):
         self.assertEqual(memoryview(b'abc'), Base(memoryview(b'abc')).id)
 
+    def test_more_than_one_args(self):
+        with self.assertRaises(TypeError):
+            Base(3, 5, 7, 8)
+
 if __name__ == '__main__':
     uniitest.main()
