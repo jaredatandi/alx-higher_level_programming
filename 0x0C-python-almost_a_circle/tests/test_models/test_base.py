@@ -69,5 +69,8 @@ class TestBaseClass(unittest.TestCase):
         with self.assertRaises(TypeError):
             Base(3, 5, 7, 8)
 
+    def test_is_no_instance(self):
+        self.assertNotIsInstance(id, Base)
+
 if __name__ == '__main__':
     uniitest.main()
