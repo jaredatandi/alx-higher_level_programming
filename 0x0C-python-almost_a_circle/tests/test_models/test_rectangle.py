@@ -23,5 +23,10 @@ class TestRectanble_Instantiation(unittest.TestCase):
         r2 = Rectangle(3, 8)
         self.assertEqual(r1.id, r2.id - 1)
 
+    def test_3_args(self):
+        r1 = Rectangle(2, 3, 5)
+        r2 = Rectangle(4, 5, 8)
+        self.assertEqual(r1.id, r2.id - 1)
+
 if __name__  == '__main__':
     unittest.main()
