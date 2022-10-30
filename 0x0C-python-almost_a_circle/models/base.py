@@ -24,7 +24,7 @@ class Base:
         """
 
         self.id = 0
-        if id == None:
+        if id is None:
             Base.__nb__objects += 1
             self.id = Base.__nb__objects
         else:
