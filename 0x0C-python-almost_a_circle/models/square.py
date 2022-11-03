@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""square
+"""square that inherits from Rectangle
 """
 from models.rectangle import Rectangle
 
@@ -9,10 +9,12 @@ class Square(Rectangle):
     """
 
     def __init__(self, size, x=0, y=0, id=None):
+        """Initializes the Square"""
         super().__init__(width=size, height=size, x=x, y=y, id=id)
 
     @property
     def size(self):
+        """set/get the width of the square"""
         return self.width
 
     @size.setter
@@ -32,6 +34,7 @@ class Square(Rectangle):
                                              self.width)
 
     def update(self, *args, **kwargs):
+        """Updates the class with the given values"""
         if len(kwargs) != 0:
             for k, v in kwargs.items():
                 setattr(self, k, v)
