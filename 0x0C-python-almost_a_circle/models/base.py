@@ -3,7 +3,11 @@
 Creates a base class
 id is always an int
 """
-
+import json
+from dataclasses import field
+import turtle as t
+import csv
+from os.path import exists
 
 class Base:
     """Base class
