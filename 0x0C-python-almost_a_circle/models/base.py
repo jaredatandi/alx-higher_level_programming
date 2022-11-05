@@ -54,3 +54,21 @@ class Base:
                 a.append(cls.to_dictionary(i))
             with open(f'{cls.__name__}.json', 'w') as f:
                 f.write(cls.to_json_string(a))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """Returns a list of JSON string"""
+        if json_string is None or len(json_string) == 0:
+            return []
+        else:
+            return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """Returns an instance with all attributes already set"""
+        if cls.__name__ == 'Rectange':
+            a = cls(1, 1)
+        else:
+            a = cls(1)
+        a.update(**dictionary)
+        return a
