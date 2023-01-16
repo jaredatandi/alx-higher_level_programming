@@ -1,9 +1,14 @@
 #!/usr/bin/python3
-""" A function to find a peak in a list of unsorted ints
+""" A module to find a peak in a list of unsorted ints
 """
 
 
 def find_peak(list_of_integers):
+    """ A function to find a peak in a list of unsorted ints
+    args:
+        list_of_integers: list of integers
+    """
+
     if not list_of_integers:
         return None
     if len(list_of_integers) == 1:
