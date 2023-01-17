@@ -7,8 +7,12 @@ import urllib.request
 def fetcher():
     """ Fetches the status of a server"""
     with urllib.request.urlopen("https://intranet.hbtn.io/status") as r:
-        html = r.read()
+        data = r.read()
         print("Body response:")
-        print("\t- type: {}".format(type(html)))
-        print("\t- content: {}".format(html))
-        print("\t- utf8: {}".format(html.decode("utf-8")))
+        print("\t- type: ", type(data))
+        print("\t- content: ", (data))
+        print("\t- utf8: ", data.decode("utf-8"))
+
+
+if __name__ == "__main__":
+    fetcher()
