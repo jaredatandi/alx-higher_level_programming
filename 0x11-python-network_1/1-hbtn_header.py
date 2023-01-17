@@ -1,12 +1,14 @@
 #!/usr/bin/python3
-""" Respond with header value"""
+"""Fetches header"""
 import urllib.request
 import sys
 
 
-url = sys.argv[1]
+def fetcher():
+    """fetcher"""
+    with urllib.request.urlopen(sys.argv[1]) as response:
+        header = response.info()
+        print(header["X-Request-Id"])
 
-with urllib.request.urlopen(url) as response:
-    headers = response.info()
-    x_request_id = headers.get("X-Request-Id")
-    print(headers["X-Request-Id"])
+if __name__ == "__main__":
+    fetcher()
