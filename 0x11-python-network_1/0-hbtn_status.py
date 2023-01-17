@@ -6,7 +6,7 @@ import urllib.request
 
 def fetcher():
     """ Fetches the status of a server"""
-    with urllib.request.urlopen("https://intranet.hbtn.io/status") as r:
+    with urllib.request.urlopen("https://alx-intranet.hbtn.io/status") as r:
         data = r.read()
         print("Body response:")
         print("\t- type: ", type(data))
