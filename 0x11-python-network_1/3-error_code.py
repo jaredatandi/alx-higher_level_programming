@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" Modulde to print error"""
 import urllib.request
 import sys
 
