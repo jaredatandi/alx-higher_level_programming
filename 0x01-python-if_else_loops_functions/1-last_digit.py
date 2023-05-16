@@ -7,8 +7,9 @@ while abs(newNumber) > 10:
     newNumber = newNumber % 10
 
 if newNumber > 5:
-    print(f"Last digit of {number} is {newNumber} and is greater than 5", end="\n")
-elif newNumber == 0:     
+    print(f"Last digit \
+        of {number} is {newNumber} and is greater than 5", end="\n")
+elif newNumber == 0:
     print(f"Last digit of {number} is {newNumber} and is 0")
 else:
     print(f"Last digit of {number} is {newNumber} and is less than 6 and no 0")
