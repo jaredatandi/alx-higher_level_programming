@@ -1,2 +1,3 @@
 -- Show all databases
-SELECT * FROM mysql 
+USE mysql;
+SHOW TABLES;
