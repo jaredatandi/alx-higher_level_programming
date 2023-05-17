@@ -1,4 +1,11 @@
 -- Describe a table
-SELECT COLUMN_NAME, COLUMN_TYPE, IS_NULLABLE, COLUMN_KEY, COLUMN_DEFAULT, EXTRA
-FROM INFORMATION_SCHEMA.COLUMNS
-WHERE TABLE_NAME = 'first_table';
+USE hbtn_0c_0;
+
+SELECT CONCAT('Table   Create Table') AS Description
+FROM information_schema.tables
+WHERE table_schema = 'hbtn_0c_0' AND table_name = 'first_table'
+UNION ALL
+SELECT CONCAT(table_name, '     ', create_statement)
+FROM information_schema.tables
+WHERE table_schema = 'hbtn_0c_0' AND table_name = 'first_table';
+
