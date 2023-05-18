@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 import sys
+pow = __import__('11-pow').pow
 
 argument = sys.argv
+arg1 = int(argument[1])
+arg2 = int(argument[2])
 
-print_last_digit = __import__('9-print_last_digit').print_last_digit
-
-l = print_last_digit(int(argument[1]))
-print(l)
+print(pow(arg1, arg2))
