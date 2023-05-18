@@ -5,7 +5,7 @@ def print_last_digit(number):
 
     """
     last_digit = abs(number) % 10
-    if number > 0:
-        print("{:d}".format(last_digit))
-    else:
-        print("{:d}".format(last_digit * -1), end="")
+    if number < 0:
+        last_digit *= -1
+        print("{}".format(last_digit))
+    return last_digit
