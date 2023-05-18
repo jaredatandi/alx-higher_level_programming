@@ -1,3 +1,9 @@
 #!/usr/bin/python3
-uppercase = __import__('8-uppercase').uppercase
-uppercase("best")
+import sys
+
+argument = sys.argv
+
+print_last_digit = __import__('9-print_last_digit').print_last_digit
+
+l = print_last_digit(int(argument[1]))
+print(l)
