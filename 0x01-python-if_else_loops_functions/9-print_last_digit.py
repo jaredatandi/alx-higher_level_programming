@@ -4,8 +4,12 @@ def print_last_digit(number):
     :returns: TODO
 
     """
-    last_digit = abs(number) % 10
+    exe = 0
     if number < 0:
-        last_digit *= -1
-        print("{}".format(last_digit))
-    return last_digit
+        number *= -1
+    exe = 1
+    last = number % 10
+    if exe == 1:
+        number *= -1
+    print("{:d}".format(last), end="")
+    return last
