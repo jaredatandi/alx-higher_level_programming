@@ -4,12 +4,11 @@ def print_last_digit(number):
     :returns: TODO
 
     """
-    exe = 0
+    last_digit = abs(number) % 10
     if number < 0:
-        number *= -1
-    exe = 1
-    last = number % 10
-    if exe == 1:
-        number *= -1
-    print("{:d}".format(last), end="")
-    return last
+        last_digit *= -1
+        print("{}".format(last_digit), end="")
+        return last_digit
+    else:
+        print("{}".format(last_digit), end="")
+        return last_digit
